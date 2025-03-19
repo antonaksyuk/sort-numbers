@@ -8,9 +8,9 @@
 
 const sortNum = (numbers = [], up = true) => {
     if (up) {
-        return [...numbers].sort((a,b) => a-b);
+        return numbers.sort((a,b) => a-b);
     }
-    return [...numbers].sort((a,b) => b-a);
+    return numbers.sort((a,b) => b-a);
 };
 
 export default sortNum;
