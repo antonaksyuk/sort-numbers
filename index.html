@@ -5,9 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/index.css" />
-        <title>JS starter</title>
+        <title>Sort Numbers</title>
     </head>
     <body>
+        <section>
+            <input id="user-input" type="number" value="0">
+            <button id="add-it" type="button">add number</button>
+            <br>
+            <p>choose type of sort</p>
+            <select id="sort-type">
+                <option value="none">none</option>
+                <option value="up">up</option>
+                <option value="down">down</option>
+                <hr>
+                <pre id="all-numbers"></pre>
+            </select>
+        </section>
         <script src="./src/index.js"></script>
     </body>
 </html>
