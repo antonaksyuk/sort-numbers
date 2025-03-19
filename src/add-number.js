@@ -1,4 +1,4 @@
-const numbers = [];
+import data from './data.js';
 
 const readNumber = (id) => {
     const value = document.getElementById(id).value
@@ -6,12 +6,12 @@ const readNumber = (id) => {
 }
 
 const display = (id, content) => {
-    document.getElementById(id).textContent = content;
+    document.getElementById(id).innerText = content;
 }
 
 const addNumber = () => {
     const newNumber = readNumber('user-input');
-    numbers.push(newNumber);
+    data.push(newNumber);
 
     let numbersList = '';
     for (const num of numbers) {
@@ -19,3 +19,5 @@ const addNumber = () => {
     }
     display('all-numbers', numbersList);
 };
+
+document.getElementById('add-it').addEventListener('click', addNumber);
